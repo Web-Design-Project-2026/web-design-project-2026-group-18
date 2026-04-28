@@ -1,0 +1,52 @@
+/*Menu-overlay*/
+.wrapper {
+  width: 1000px;
+  margin: 0 auto;
+}
+
+.logo {
+  float: left;
+}
+
+.logo h2 {
+  color: white;
+}
+
+.menu-button {
+  background-color: transparent;
+  color: rgb(0, 0, 0);
+  padding: 15px;
+  font-size: 15px;
+  cursor: pointer;
+  border: 1px solid white;
+}
+
+.right-menu {
+  position: relative;
+  display: inline-block;
+  float: left;
+}
+
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  background-color: rgb(85, 85, 85);
+  min-width: 500px;
+  z-index: 1;
+}
+
+.dropdown-menu.show {
+  display: block;
+}
+
+.dropdown-menu a {
+  display: block;
+  padding: 12px;
+  color: white;
+  text-decoration: none;
+}
+
+.dropdown-menu a:hover {
+  background-color: rgb(231, 231, 231);
+  color: rgb(0, 0, 0);
+}
