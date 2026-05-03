@@ -1,3 +1,17 @@
+.footer {
+  background-color: rgb(248, 248, 227);
+}
+
+.logotype {
+  width: 150px;
+  height: auto;
+  margin-top: 30px;
+}
+
+.bag-icon {
+  margin-top: 15px;
+}
+
 /*Menu-overlay*/
 .wrapper {
   width: 1000px;
@@ -36,10 +50,13 @@
 
 .dropdown-menu {
   display: none;
+  width: 100vw;
+  left: 0;
+  right: 0;
   position: absolute;
   background-color: rgb(255, 255, 255);
   min-width: 500px;
-  z-index: 1;
+  z-index: 5;
 }
 
 .dropdown-menu.show {
@@ -59,17 +76,14 @@
   color: rgb(0, 0, 0);
 }
 
-
-
-
 /* about us */
 
 body {
   margin: 0;
+  padding: 0;
   display: flex;
   flex-direction: column;
 }
-
 
 .footer {
   margin-top: 10px;
@@ -82,7 +96,6 @@ body {
   justify-content: center;
   gap: 100px;
   margin-bottom: 40px;
-
 }
 
 .footer-left,
@@ -92,9 +105,192 @@ body {
   gap: 10px;
 }
 
-
 .footer-copy {
   background-color: #f5f5f5;
   padding: 30px;
 }
 
+/*Homepage-header1*/
+section.header {
+  position: relative;
+  width: 100vw;
+}
+
+.header1 {
+  width: 100vw;
+  height: 900px;
+  object-fit: cover;
+  display: block;
+}
+
+.header-text1 {
+  position: absolute;
+  top: 50px;
+  left: 50px;
+  text-align: left;
+  max-width: 500px;
+  color: black;
+  z-index: 2;
+}
+
+.header-text1 h1 {
+  margin: 0 0 10px 0;
+  font-size: 70px;
+  text-transform: uppercase;
+}
+
+.header-text1 p {
+  margin: 0;
+  font-size: 18px;
+  text-decoration: underline;
+  cursor: pointer;
+  margin-top: -10px;
+}
+
+.new-arrivals h2 {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.product-grid {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.product {
+  flex: 0 0 25%;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+.product img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.product p {
+  margin: 15px 0 5px 0;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 14px;
+  color: black;
+}
+
+.product span {
+  margin-bottom: 20px;
+  font-size: 14px;
+  color: black;
+  display: block;
+}
+
+.header2 {
+  position: relative;
+  width: 100vw;
+  line-height: 0;
+}
+
+.header2-img {
+  width: 100vw;
+  height: 900px;
+  object-fit: cover;
+  display: block;
+}
+
+.header-text2 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;
+  width: 100%;
+  z-index: 2;
+}
+
+.header-text2 h1 {
+  margin: 0;
+  font-size: 48px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.denim-edit {
+  width: 100%;
+  padding: 40px 0 0 0;
+}
+
+.denim-edit h2 {
+  text-align: center;
+  margin-bottom: 30px;
+  text-transform: uppercase;
+}
+
+.product-grid2 {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.product2 {
+  flex: 0 0 25%;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+.product2 img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.product2 p {
+  margin: 15px 0 5px 0;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 14px;
+  color: black;
+}
+
+.product2 span {
+  margin-bottom: 20px;
+  font-size: 14px;
+  color: black;
+  display: block;
+}
+
+/*hover för homepage*/
+.product-image-container {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+.product-image-container img {
+  width: 100%;
+  height: auto;
+  display: block;
+  transition: opacity 0.4s ease;
+}
+
+.img-secondary {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+}
+
+.product:hover .img-secondary,
+.product2:hover .img-secondary {
+  opacity: 1;
+}
+
+.product:hover .img-primary,
+.product2:hover .img-primary {
+  opacity: 0;
+}
