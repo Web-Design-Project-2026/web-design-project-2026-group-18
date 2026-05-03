@@ -294,3 +294,88 @@ section.header {
 .product2:hover .img-primary {
   opacity: 0;
 }
+
+/*Dresses*/
+.category-intro {
+  text-align: center;
+  max-width: 800px;
+  margin: 60px auto;
+  padding: 0 20px;
+}
+
+.category-intro h2 {
+  font-size: 20px;
+  letter-spacing: 2px;
+  margin-bottom: 10px;
+  color: black;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.category-intro p {
+  font-size: 16px;
+  line-height: 1.6;
+  color: black;
+  margin: 0;
+  margin-bottom: 30px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.button-group {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+.filter-btn {
+  display: inline-block;
+  padding: 8px 30px;
+  border: 1px solid black;
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+  font-size: 12px;
+  letter-spacing: 1px;
+  transition: all 0.3s ease;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.filter-btn:hover {
+  background-color: white;
+  color: #fff;
+}
+
+/*Dresses.html*/
+.product-grid3,
+.product-grid4 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  max-width: 1500px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.product-item {
+  flex: 1;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.product3 img,
+.product4 img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.product-item p {
+  margin: 15px 0 5px 0;
+  font-weight: bold;
+}
+
+.product-item span {
+  color: black;
+  font-size: 14px;
+}
