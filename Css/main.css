@@ -368,6 +368,7 @@ section.header {
   width: 100%;
   height: auto;
   display: block;
+  max-width: 400px;
 }
 
 .product-item p {
@@ -455,4 +456,33 @@ section.header {
   color: white;
   width: 40%;
   max-width: 500px;
+}
+
+/*Dresses-filter hover*/
+.product3 {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  max-width: 400px;
+}
+
+.product3 img {
+  width: 100%;
+  display: block;
+  transition: opacity 0.4s ease-in-out;
+}
+
+.img-secondary2 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+}
+
+.product-hover:hover .img-secondary2 {
+  opacity: 1;
+}
+
+.product-hover:hover .img-primary2 {
+  opacity: 1;
 }
