@@ -13,3 +13,17 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   });
 });
+
+document.addEventListener("DOMContentLoaded", () => {
+  const sizeItems = document.querySelectorAll(".size-item");
+
+  sizeItems.forEach((item) => {
+    item.addEventListener("click", () => {
+      console.log("clicked:", item.innerText);
+
+      sizeItems.forEach((s) => s.classList.remove("selected"));
+
+      item.classList.add("selected");
+    });
+  });
+});

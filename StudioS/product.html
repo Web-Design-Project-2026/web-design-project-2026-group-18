@@ -39,12 +39,11 @@
       </nav>
     </header>
 
-    <main>
+    <main class="product-page">
       <!-- LEFT SIDE: PRODUCT IMAGES -->
-      <section>
+      <section class="image-gallery">
         <img src="/img/dress4.png" alt="Front view" />
         <img src="/img/dress4-backview.jpeg" alt="Back view" />
-
         <img src="/img/dress4-mainview.jpeg" alt="Main view" />
         <img src="/img/dress4-detailview.jpeg" alt="Detail view" />
         <img src="/img/dress4-seatedview.jpeg" alt="Full view" />
@@ -52,20 +51,23 @@
 
       <!-- RIGHT SIDE: PRODUCT INFO -->
       <section class="product-info">
-        <h2>SARA DRESS</h2>
-        <p>The Sculpted Mini Dress - Cream</p>
-        <p>799.00 SEK</p>
+        <div class="sticky-content">
+          <h2>SARA DRESS</h2>
+          <p class="subtitle">The Sculpted Mini Dress - Cream</p>
+          <p class="price">799.00 SEK</p>
 
-        <div class="sizes">
-          <p>sizes</p>
-          <p>XXS</p>
-          <p>XS</p>
-          <p>S</p>
-          <p>M</p>
-          <p>L</p>
-          <p>XL</p>
-          <p>XXL</p>
-          <p>XXXL</p>
+          <div class="sizes">
+            <p>Sizes</p>
+            <div class="size-options">
+              <span class="size-item">XXS</span>
+              <span class="size-item">XS</span>
+              <span class="size-item">S</span>
+              <span class="size-item">M</span>
+              <span class="size-item">L</span>
+              <span class="size-item">XL</span>
+              <span class="size-item">XXL</span>
+            </div>
+          </div>
         </div>
 
         <button class="add-to-bag">ADD TO BAG</button>
@@ -81,8 +83,51 @@
             for both cocktail evenings and chic daytime events.
           </p>
         </div>
+        <details class="Material">
+          <summary><b>Material</b></summary>
+          55% Linen <br />
+          42% Cotton <br />
+          3% Elastane
+        </details>
+        <details class="shipping">
+          <summary><b>Shipping</b></summary>
+          We offer free shipping on all orders within Sweden. A flat shipping
+          fee of 49 SEK applies to orders delivered outside of Sweden.
+        </details>
       </section>
     </main>
+
+    <section class="reviews-section">
+      <div class="fit-container">
+        <img src="/img/Fit.png" alt="Fit visualization" class="fit-image" />
+      </div>
+
+      <h3 class="reviews-main-title">Reviews</h3>
+
+      <div class="review-post">
+        <p><b>DRESS LOOKS AMAZING</b></p>
+        <p class="review-text">
+          Dress fits like pictured. You can dress it down with a belt due a
+          light evening or wear it <br />
+          fancy.Received many compliments. Would love to have it in more colors.
+        </p>
+        <div class="stars">★★★★★</div>
+      </div>
+
+      <div class="write-review-area">
+        <p class="write-title">STAY IN TOUCH</p>
+        <p class="write-subtitle">Share your thoughts with other customers</p>
+
+        <div class="input-group">
+          <input type="text" placeholder="Your name" class="review-input" />
+          <textarea
+            placeholder="Write your review here.."
+            class="review-textarea"
+          ></textarea>
+          <button type="button" class="post-button">POST REVIEW</button>
+        </div>
+      </div>
+    </section>
 
     <footer class="footer">
       <div class="footer-content">
