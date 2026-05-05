@@ -670,6 +670,7 @@ section.header {
   border-bottom: 2px solid black;
 }
 
+/*Reviews section*/
 .reviews-section {
   margin-top: 50px;
   padding-top: 30px;
@@ -759,8 +760,17 @@ section.header {
   letter-spacing: 1px;
   cursor: pointer;
   transition: 0.3s;
+  align-self: center;
+  min-width: 600px;
 }
 
 .post-button:hover {
   background-color: #333;
+}
+
+.more-options {
+  font-size: 1.6rem;
+  text-align: center;
+  margin-top: 50px;
+  line-height: 1.6;
 }
