@@ -6,7 +6,9 @@
     <title>StudioS</title>
     <link rel="stylesheet" href="../Css/main.css" />
     <script src="../js/main.js" defer></script>
+    <script src="../js/product.js" defer></script>
   </head>
+
   <body>
     <div class="wrapper">
       <nav class="logo">
@@ -33,9 +35,9 @@
 
     <header class="header">
       <nav class="bag">
-        <a href="checkout.html">
-          <img src="/img/bag.png" alt="Bag" class="bag-icon" />
-        </a>
+        <button class="bag-button">
+        <img src="/img/bag.png" alt="Bag" class="bag-icon" />
+      </button>
       </nav>
     </header>
 
@@ -59,18 +61,18 @@
           <div class="sizes">
             <p>Sizes</p>
             <div class="size-options">
-              <span class="size-item">XXS</span>
-              <span class="size-item">XS</span>
-              <span class="size-item">S</span>
-              <span class="size-item">M</span>
-              <span class="size-item">L</span>
-              <span class="size-item">XL</span>
-              <span class="size-item">XXL</span>
+              <button class="size-btn">XXS</button>
+              <button class="size-btn">XS</button>
+              <button class="size-btn">S</button>
+              <button class="size-btn">M</button>
+              <button class="size-btn">L</button>
+              <button class="size-btn">XL</button>
+              <button class="size-btn">XXL</button>
             </div>
           </div>
         </div>
 
-        <button class="add-to-bag">ADD TO BAG</button>
+        <button id="addBag" class="add-to-bag">ADD TO BAG</button>
 
         <!-- Description -->
         <div class="description">
@@ -234,5 +236,36 @@
 
       <p class="copyright">&copy;Studio S</p>
     </footer>
+
+     <div id="cartOverlay" class="cart-overlay">
+  <div class="cart-drawer">
+    <h2>Your Cart</h2>
+
+    <div class="cart-item">
+      <img src="/img/dress4.png" alt="Sara Dress" />
+
+      <div>
+        <p>Sara Dress</p>
+        <p id="cartSize"></p>
+        <p id="cartPrice">799 SEK</p>
+
+        <div>
+          <button id="minusBtn">-</button>
+          <span id="cartQuantity">1</span>
+          <button id="plusBtn">+</button>
+          <button id="removeBtn">Remove</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="cart-bottom">
+  <p>Subtotal: <span id="cartTotal">799 SEK</span></p>
+
+  <a href="checkout.html">
+    <button class="cart-checkout-btn">Checkout</button>
+  </a>
+</div>
+  </div>
+</div>
   </body>
 </html>
