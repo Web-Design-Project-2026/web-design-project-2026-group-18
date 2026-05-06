@@ -31,7 +31,6 @@
   flex-direction: column;
 }
 
-
 .copyright {
   text-align: center;
   margin-top: 3rem;
@@ -411,6 +410,23 @@ section.header {
 }
 
 /*Dresses.html*/
+.video-container {
+  position: relative;
+  width: 100vw;
+  height: 80vh;
+  overflow: hidden;
+  background-color: #000000;
+}
+
+.header-video {
+  width: 100vw;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
 .product-grid3,
 .product-grid4 {
   display: flex;
@@ -526,14 +542,16 @@ section.header {
 }
 
 /*Dresses-filter hover*/
-.product3 {
+.product3,
+.product4 {
   position: relative;
   width: 100%;
   overflow: hidden;
   max-width: 400px;
 }
 
-.product3 img {
+.product3 img,
+.product4 img {
   width: 100%;
   display: block;
   transition: opacity 0.4s ease-in-out;
@@ -656,7 +674,6 @@ section.header {
   clear: both;
 }
 
-
 /* About*/
 
 .about {
@@ -670,7 +687,6 @@ section.header {
 .about img {
   width: 600px;
 }
-
 
 .image-gallery img {
   width: 100%;
@@ -747,12 +763,10 @@ section.header {
   border-top: 1px solid black;
 }
 
-
 .about-footer-right {
   width: 100%;
   text-align: center;
   margin-top: 2rem;
-
 }
 
 .about-footer-left {
@@ -761,5 +775,4 @@ section.header {
   gap: 4rem;
   flex-wrap: nowrap;
   text-align: center;
- 
 }
