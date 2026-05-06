@@ -14,16 +14,21 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 
-document.addEventListener("DOMContentLoaded", () => {
-  const sizeItems = document.querySelectorAll(".size-item");
+document.addEventListener("DOMContentLoaded", function () {
+  const bagButton = document.querySelector(".bag button");
+  const cartOverlay = document.getElementById("cartOverlay");
 
-  sizeItems.forEach((item) => {
-    item.addEventListener("click", () => {
-      console.log("clicked:", item.innerText);
+  bagButton.addEventListener("click", function (event) {
+    event.stopPropagation();
+    cartOverlay.style.display = "block";
+  });
 
-      sizeItems.forEach((s) => s.classList.remove("selected"));
-
-      item.classList.add("selected");
-    });
+  cartOverlay.addEventListener("click", function (event) {
+    if (event.target === cartOverlay) {
+      cartOverlay.style.display = "none";
+    }
   });
 });
+
+
+

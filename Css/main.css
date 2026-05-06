@@ -121,6 +121,58 @@ a {
   color: rgb(0, 0, 0);
 }
 
+/* CHECKOUT OVERLAY */
+.bag-button {
+  background-color: transparent;
+  color: rgb(0, 0, 0);
+  padding: 15px;
+  font-size: 15px;
+  cursor: pointer;
+  border: 1px solid white;
+}
+.cart-overlay {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background-color: none;
+  z-index: 999;
+}
+
+.cart-drawer {
+  width: 35%;
+  height: 100%;
+  background: white;
+  margin-left: auto;
+  padding: 1rem;
+}
+
+.cart-item {
+  display: flex;
+  gap: 30px;
+}
+
+.cart-item img {
+  width: 150px;
+}
+
+.cart-bottom {
+  background-color: #f5f1e8;
+ 
+}
+
+.cart-checkout-btn {
+  width: 100%;
+  background-color: black;
+  color: white;
+  margin-top: 15px;
+  font-size: 16px;
+}
+.cart-bottom {
+  position: absolute;
+  bottom: 5px;
+  right: 5px;
+  left: 67%;
+}
 /*Homepage-header1*/
 section.header {
   position: relative;
@@ -669,7 +721,7 @@ section.header {
   font-weight: bold;
   border-bottom: 2px solid black;
 }
-
+.button
 /*Reviews section*/
 .reviews-section {
   margin-top: 50px;
