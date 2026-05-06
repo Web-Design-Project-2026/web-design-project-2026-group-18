@@ -8,11 +8,13 @@
   display: flex;
   justify-content: center;
   gap: 8rem;
-  align-items: flex-start;
+  align-items: center;
 }
-.footer-left p,
+
+.footer-left p ,
 .footer-right p {
-  margin: 0 0 0.4rem 0;
+  display: block;
+  margin: 0 0 1,2rem 0;
   font-size: 1rem;
 }
 
@@ -22,6 +24,7 @@
 
 .social-item {
   display: flex;
+  justify-content: center;
   align-items: center;
   gap: 0.5rem;
   margin-bottom: 0.5rem;
@@ -30,6 +33,15 @@
   display: flex;
   flex-direction: column;
 }
+
+.footer-left,
+.footer-right {
+  text-align: center;
+  margin: 0;
+  max-width: 400px;
+
+}
+
 
 .copyright {
   text-align: center;
@@ -652,22 +664,21 @@ section.header {
   clear: both;
 }
 
-/*product-site*/
-.product-page {
+
+/* About*/
+
+.about {
   display: flex;
-  align-items: flex-start;
-  max-width: 1400px;
-  margin: 0 auto;
-  gap: 60px;
-  padding: 20px;
+  gap: 50px;
+  align-items: center;
+  justify-content: center;
+  padding: 80px;
 }
 
-.image-gallery {
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  gap: 0;
+.about img {
+  width: 600px;
 }
+
 
 .image-gallery img {
   width: 100%;
@@ -727,102 +738,21 @@ section.header {
   margin-top: 50px;
   padding-top: 30px;
   border-top: 1px solid black;
-  text-align: center;
 }
 
-.fit-container {
-  margin-bottom: 40px;
-}
 
-.fit-image {
+.about-footer-right {
   width: 100%;
-  max-width: 350px;
-  height: auto;
-  display: block;
-  margin: 0 auto;
+  text-align: center;
+  margin-top: 2rem;
+
 }
 
-.reviews-main-title {
-  font-size: 1.8rem;
-  font-weight: 500;
-  margin-bottom: 25px;
-  text-transform: none;
-}
-
-.review-post {
-  text-align: left;
-  margin-bottom: 40px;
-  padding: 0 10px;
-}
-
-.review-text {
-  font-size: 1rem;
-  line-height: 1.6;
-  margin: 12px 0;
-}
-
-.stars {
-  font-size: 1.1rem;
-}
-
-.write-review-area {
-  text-align: left;
-  padding: 20px;
-  background-color: #ffffff;
-  border-radius: 4px;
-}
-
-.write-title {
-  font-weight: bold;
-  font-size: 1rem;
-  margin-bottom: 5px;
-}
-
-.write-subtitle {
-  font-size: 0.95rem;
-  color: #414141;
-  margin-bottom: 15px;
-}
-
-.input-group {
+.about-footer-left {
   display: flex;
-  flex-direction: column;
-  gap: 12px;
-}
-
-.review-input,
-.review-textarea {
-  width: 100%;
-  padding: 12px;
-  border: 1px solid #ddd;
-  background-color: white;
-}
-
-.review-textarea {
-  height: 100px;
-  resize: none;
-}
-
-.post-button {
-  background: black;
-  color: white;
-  border: none;
-  padding: 15px;
-  font-weight: bold;
-  letter-spacing: 1px;
-  cursor: pointer;
-  transition: 0.3s;
-  align-self: center;
-  min-width: 600px;
-}
-
-.post-button:hover {
-  background-color: #333;
-}
-
-.more-options {
-  font-size: 1.6rem;
+  justify-content: center;
+  gap: 4rem;
+  flex-wrap: nowrap;
   text-align: center;
-  margin-top: 50px;
-  line-height: 1.6;
+ 
 }
