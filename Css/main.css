@@ -156,11 +156,6 @@ a {
   width: 150px;
 }
 
-.cart-bottom {
-  background-color: #f5f1e8;
- 
-}
-
 .cart-checkout-btn {
   width: 100%;
   background-color: black;
@@ -169,11 +164,19 @@ a {
   font-size: 16px;
 }
 .cart-bottom {
+  background-color: #f5f1e8;
   position: absolute;
   bottom: 5px;
   right: 5px;
-  left: 67%;
+  left: 63.5%;
 }
+
+.cart-bottom p {
+  text-align: center;
+  padding: 10px;
+  font-size: 14px;
+}
+
 /*Homepage-header1*/
 section.header {
   position: relative;
