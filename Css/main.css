@@ -8,13 +8,11 @@
   display: flex;
   justify-content: center;
   gap: 8rem;
-  align-items: center;
+  align-items: flex-start;
 }
-
-.footer-left p ,
+.footer-left p,
 .footer-right p {
-  display: block;
-  margin: 0 0 1,2rem 0;
+  margin: 0 0 0.4rem 0;
   font-size: 1rem;
 }
 
@@ -24,7 +22,6 @@
 
 .social-item {
   display: flex;
-  justify-content: center;
   align-items: center;
   gap: 0.5rem;
   margin-bottom: 0.5rem;
@@ -32,14 +29,6 @@
 .footer-right {
   display: flex;
   flex-direction: column;
-}
-
-.footer-left,
-.footer-right {
-  text-align: center;
-  margin: 0;
-  max-width: 400px;
-
 }
 
 
