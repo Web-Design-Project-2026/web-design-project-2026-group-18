@@ -763,3 +763,106 @@ section.header {
   text-align: center;
  
 }
+.reviews-section {
+  margin-top: 50px;
+  padding-top: 30px;
+  border-top: 1px solid black;
+  text-align: center;
+}
+
+.fit-container {
+  margin-bottom: 40px;
+}
+
+.fit-image {
+  width: 100%;
+  max-width: 350px;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+.reviews-main-title {
+  font-size: 1.8rem;
+  font-weight: 500;
+  margin-bottom: 25px;
+  text-transform: none;
+}
+
+.review-post {
+  text-align: left;
+  margin-bottom: 40px;
+  padding: 0 10px;
+}
+
+.review-text {
+  font-size: 1rem;
+  line-height: 1.6;
+  margin: 12px 0;
+}
+
+.stars {
+  font-size: 1.1rem;
+}
+
+.write-review-area {
+  text-align: left;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 4px;
+}
+
+.write-title {
+  font-weight: bold;
+  font-size: 1rem;
+  margin-bottom: 5px;
+}
+
+.write-subtitle {
+  font-size: 0.95rem;
+  color: #414141;
+  margin-bottom: 15px;
+}
+
+.input-group {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.review-input,
+.review-textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ddd;
+  background-color: white;
+}
+
+.review-textarea {
+  height: 100px;
+  resize: none;
+}
+
+.post-button {
+  background: black;
+  color: white;
+  border: none;
+  padding: 15px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  cursor: pointer;
+  transition: 0.3s;
+  align-self: center;
+  min-width: 600px;
+}
+
+.post-button:hover {
+  background-color: #333;
+}
+
+.more-options {
+  font-size: 1.6rem;
+  text-align: center;
+  margin-top: 50px;
+  line-height: 1.6;
+}
