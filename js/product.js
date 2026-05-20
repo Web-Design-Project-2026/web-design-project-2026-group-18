@@ -1,26 +1,33 @@
 let chosenSize = "";
 
 const sizes = document.querySelectorAll(".size-btn");
+const cartOverlay = document.getElementById("cartOverlay");
+const addBag = document.getElementById("addBag");
 
+// SIZE BUTTONS
 sizes.forEach((button) => {
-  button.addEventListener("click", function () {
-    chosenSize = button.innerText;
-  });
-});
-
-document.getElementById("addBag").addEventListener("click", function () {
-  localStorage.setItem("size", chosenSize);
-
-  window.location.href = "checkout.html";
-});
-const sizeButtons = document.querySelectorAll(".size-btn");
-
-sizeButtons.forEach((button) => {
   button.addEventListener("click", () => {
-    // remove active class from all buttons
-    sizeButtons.forEach((btn) => btn.classList.remove("active"));
+    chosenSize = button.innerText;
 
-    // add active class to clicked button
+    // remove active class
+    sizes.forEach((btn) => btn.classList.remove("active"));
+
+    // add active class
     button.classList.add("active");
   });
+});
+
+// ADD TO BAG
+addBag.addEventListener("click", () => {
+  localStorage.setItem("size", chosenSize);
+
+  // open cart overlay
+  cartOverlay.style.display = "block";
+});
+
+// CLOSE OVERLAY WHEN CLICKING OUTSIDE
+cartOverlay.addEventListener("click", (event) => {
+  if (event.target === cartOverlay) {
+    cartOverlay.style.display = "none";
+  }
 });
