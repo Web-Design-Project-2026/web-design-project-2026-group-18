@@ -306,6 +306,7 @@ section.header {
 .product img,
 .product2 img {
   width: 100%;
+  height: auto;
   display: block;
 }
 
@@ -326,6 +327,31 @@ section.header {
 }
 
 /* PRODUCT HOVER */
+.product3 {
+  position: relative;
+  overflow: hidden;
+}
+
+.product3 img {
+  width: 100%;
+  display: block;
+  transition: opacity 0.4s ease-in-out;
+}
+
+.product3 .img-secondary, .product3 .img-secondary2 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+}
+
+.product-hover:hover .img-secondary ,.img-secondary2{
+  opacity: 1;
+}
+
+.product-hover:hover .img-primary2 {
+  opacity: 0;
+}
 .product-image-container {
   position: relative;
   width: 100%;
@@ -338,24 +364,22 @@ section.header {
   transition: opacity 0.4s ease;
 }
 
-.img-secondary,
-.img-secondary2 {
+.product-image-container .img-secondary {
   position: absolute;
   top: 0;
   left: 0;
   opacity: 0;
 }
 
-.product:hover .img-secondary,
-.product2:hover .img-secondary,
-.product-hover:hover .img-secondary2 {
+.product2:hover .img-secondary {
   opacity: 1;
 }
 
-.product:hover .img-primary,
 .product2:hover .img-primary {
   opacity: 0;
 }
+
+
 
 /* CATEGORY INTRO */
 .category-intro,
@@ -550,9 +574,8 @@ section.header {
 .checkout-button {
   border: none;
   cursor: pointer;
-  font-size: 0.8rem;
+  font-size: 1rem;
   height: 2rem;
-  padding: 0 1.2rem;
   margin-right: 0.6rem;
 }
 
@@ -584,21 +607,24 @@ section.header {
 }
 
 .checkout-left img {
-  width: 6rem;
-  height: 9rem;
+  width: 15rem;
+  height: 20rem;
   object-fit: cover;
   background: #eee;
 }
+.checkout-left h3{
+  font-size: 1.2rem;
+}
 
 .product-text p {
-  font-size: 0.9rem;
+  font-size:1.5rem;
   margin-bottom: 0.8rem;
 }
 
 .summary-row {
   display: flex;
   justify-content: space-between;
-  font-size: 0.9rem;
+  font-size:1.5rem;
   margin-bottom: 1rem;
 }
 
@@ -984,6 +1010,20 @@ section.header {
     padding: 5rem 1.5rem 3rem;
     min-height: auto;
   }
+  .checkout-left img {
+  width: 8rem;
+  height: 11rem;
+  object-fit: cover;
+  background: #eee;
+  }
+  .checkout-left h3{
+  font-size: 1.0rem;
+  }
+
+  .product-text p {
+  font-size: 0.8rem;
+  margin-bottom: 0.8rem;
+  }
 
   .checkout-left,
   .checkout-right {
@@ -1009,7 +1049,7 @@ section.header {
 
   .checkout-button {
     width: 20%;
-    margin-bottom: 10px;
+    min-width: 120px;
   }
 
   .checkout-left div .checkout-button {
