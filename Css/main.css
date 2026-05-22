@@ -414,6 +414,9 @@ section.header {
   justify-content: center;
   gap: 15px;
 }
+.button-group a{
+  font-size: 16px;
+}
 
 .filter-btn {
   display: inline-block;
@@ -916,6 +919,10 @@ section.header {
     margin: 40px auto;
   }
 
+  .button-group a{
+  font-size: 13px;
+  } 
+
   .category-intro p,
   .header-intro p {
     font-size: 17px;
@@ -1187,6 +1194,10 @@ h2 {
   font-weight: bold;
   font-size: 14px;
 }
+
+.button-group a{
+  font-size: 10px;
+} 
 
 .product-item span {
   font-size: 12px;
